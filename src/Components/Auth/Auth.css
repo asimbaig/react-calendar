@@ -1,0 +1,23 @@
+.Auth {
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    box-shadow: 0 2px 3px #ccc;
+    border: 1px solid #eee;
+    padding: 10px;
+    box-sizing: border-box;
+}
+/* for small screen size */
+@media screen and (max-width: 900px) {
+    .Auth {
+        left: 0;
+        width: 100%;
+    }
+}
+/* for large screen size */
+@media screen and (min-width: 899px) {
+    .Auth {
+        left: 35%;
+        width: 500px;
+    }
+}

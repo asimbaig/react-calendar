@@ -1,0 +1,93 @@
+/* Make HTML Table Responsive */
+.responsive_table {
+    margin: auto;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-size: 0.7rem;
+    table-layout: fixed;
+}
+
+.responsive_table th {
+    display: none;
+}
+
+.responsive_table td {
+    text-align: center;
+    display: block;
+    border-bottom: 2px solid;
+    border-color: rgb(201, 201, 201);
+}
+
+.responsive_table td:before {
+    content: attr(data-th) "  ";
+    font-weight: bold;
+        display: inline-block;
+    color: inherit;
+}
+
+.responsive_table {
+    color: inherit;
+    overflow: hidden;
+}
+
+.responsive_table tr {
+    border-color: inherit;
+}
+
+/* For small screen size */
+@media screen and (max-width: 768px) {
+    /* Heading on small screen */
+    .responsive_table td:before {
+        width: 100%;
+        background-color: black;
+        text-align: center!important;
+        font-size: 1.2rem;
+        color: #fff;
+    }
+    .responsive_table td:hover {
+        background-color: rgb(255, 163, 163);
+        color: rgb(255, 0, 0);
+    }
+    .date-text{
+        text-align: center!important;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .responsive_table td:hover {
+        background-color: rgb(255, 163, 163); 
+        color: rgb(255, 0, 0);
+    }
+
+    .responsive_table td:before {
+        display: none;
+    }
+
+    .responsive_table th,
+    .responsive_table td {
+        display: table-cell;
+        padding: 0.25em 0.5em;
+    }
+    .responsive_table th{
+        background-color: black;
+    text-align: center!important;
+    font-size: 1.2rem;
+    color: #fff;
+    }
+    .date-text{
+        text-align: right!important;
+    }
+}
+
+.cell-width {
+    max-width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.todaytd{
+    background-color: #AFEEEE!important;
+}
